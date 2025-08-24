@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #121212;
+  color: #eee;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #81c784;
+}
+
+input[type="text"] {
+  padding: 10px 15px;
+  width: 220px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  margin-right: 10px;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+  background-color: #1e1e1e;
+  color: #eee;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 0 8px 2px #81c784;
+  background-color: #2a2a2a;
+  color: #eee;
+}
+
+button {
+  background-color: #81c784;
+  color: #121212;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(129, 199, 132, 0.6);
+  user-select: none;
+}
+
+button:hover {
+  background-color: #66bb6a;
+  box-shadow: 0 4px 12px rgba(102, 187, 106, 0.8);
+}
+
+#tableContainer {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 900px;
+  overflow-x: auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+  border-radius: 12px;
+  background: #1e1e1e;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  font-size: 14px;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+  color: #ddd;
+  user-select: none;
+  white-space: nowrap;
+}
+
+th {
+  background: #2e7d32;
+  color: #d0f0c0;
+  font-weight: 600;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+td:first-child {
+  text-align: left;
+  font-weight: 600;
+  color: #81c784;
+}
+
+tr {
+  background: #272727;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+tr:hover {
+  background: #333;
+}
+
+.green {
+  background-color: #388e3c !important;
+  color: #e8f5e9 !important;
+  font-weight: 700;
+  box-shadow: 0 0 10px #66bb6a;
+  border-radius: 6px;
+}
+
+.yellow {
+  background-color: #fbc02d !important;
+  color: #3e2723 !important;
+  font-weight: 700;
+  box-shadow: 0 0 10px #ffeb3b;
+  border-radius: 6px;
+}
+
+/* Old cards highlights */
+.blue {
+  background-color: #1976d2 !important;
+  color: #e3f2fd !important;
+  font-weight: 600;
+  box-shadow: 0 0 8px #64b5f6;
+  border-radius: 6px;
+}
+
+.orange {
+  background-color: #f57c00 !important;
+  color: #fff3e0 !important;
+  font-weight: 600;
+  box-shadow: 0 0 8px #ffb74d;
+  border-radius: 6px;
+}
+
+#history {
+  margin-top: 40px;
+  max-width: 900px;
+  width: 100%;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+  font-size: 16px;
+  color: #c8e6c9;
+  user-select: none;
+}
+
+#history ul {
+  padding-left: 20px;
+  list-style-type: decimal;
+  color: #c8e6c9;
+  margin-top: 0;
+}
